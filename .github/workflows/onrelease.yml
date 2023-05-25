@@ -34,6 +34,14 @@ jobs:
         run: |
           pip install -r unit-requirements.txt
 
+      - name: Deploy PROD-telco-churn-demo-setup job [prod environment]
+        run: |
+          dbx deploy --deployment-file conf/deployment.yml --jobs=PROD-telco-churn-demo-setup --environment=prod
+
+      - name: Deploy PROD-telco-churn-initial-model-train-register job [prod environment]
+        run: |
+          dbx deploy --deployment-file conf/deployment.yml --jobs=PROD-telco-churn-initial-model-train-register --environment=prod
+
       - name: Deploy PROD-telco-churn-model-train job [prod environment]
         run: |
           dbx deploy --deployment-file conf/deployment.yml --jobs=PROD-telco-churn-model-train --environment=prod
