@@ -2,5 +2,6 @@
   "host": "https://adb-4862223949650295.15.azuredatabricks.net/",
   "authType": "profile",
   "profile": "DEFAULT",
-  "clusterId": "0519-163301-wb9mp756"
+  "clusterId": "0519-163301-wb9mp756",
+  "workspacePath": "/Users/guanjie.shen@databricks.com/.ide/e2e-mlops-5fe27c22"
 }
